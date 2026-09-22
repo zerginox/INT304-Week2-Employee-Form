@@ -1,0 +1,109 @@
+.employee-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+.employee-card {
+  width: min(100%, 520px);
+  background: #ffffff;
+  border: 1px solid #d7dce2;
+  border-radius: 12px;
+  padding: 32px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.employee-card h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 2rem;
+  color: #1f2933;
+}
+
+.form-intro {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #52606d;
+  line-height: 1.5;
+}
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #243b53;
+}
+
+.form-group input {
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #9fb3c8;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+  color: #102a43;
+  background: #ffffff;
+}
+
+.form-group input:focus {
+  outline: 3px solid rgba(0, 109, 204, 0.25);
+  border-color: #006dcc;
+}
+
+.employee-form button {
+  min-height: 48px;
+  margin-top: 6px;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 700;
+  background: #006dcc;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.employee-form button:hover {
+  background: #0059a8;
+}
+
+.employee-form button:focus-visible {
+  outline: 3px solid #1f2933;
+  outline-offset: 3px;
+}
+
+.form-status {
+  min-height: 24px;
+  margin: 18px 0 0;
+  text-align: center;
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .employee-page {
+    padding: 24px 14px;
+  }
+
+  .employee-card {
+    padding: 22px 18px;
+  }
+
+  .employee-card h1 {
+    font-size: 1.65rem;
+  }
+}
